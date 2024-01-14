@@ -169,7 +169,7 @@ tabella=numpy.column_stack((tabella,colonna_zeri)) #aggiungo la colonna di zeri 
 
 for i in range(ninput):
   for j in range(ntab):
-    if (input[i,0]==tabella[j,2]):  #inserisco any in quanto è una matrice numpy e non posso applicare una normale condizione con ==
+    if (input[i,0]==tabella[j,2]): 
       tabella[j,4]=float(tabella[j, 3])*int(input[i,1])
 
 lavoro={}
